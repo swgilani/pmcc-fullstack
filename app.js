@@ -3,11 +3,13 @@ const app = express();
 const mongoose = require('mongoose');
 const DataObject = require('./models/DataObjectModel');
 const axios = require('axios');
+const cors = require('cors');
 
 
 const NOT_FOUND_ERROR = "No psets found";
 const SERVER_ERROR= "Internal server error";
 
+app.use(cors());
 mongoose.connect(
     "mongodb+srv://root:root@development-cluster-ptdz3.azure.mongodb.net/orcestra-new?retryWrites=true&w=majority"
 );
@@ -43,5 +45,5 @@ app.get('/api/psets', async (req,res) => {
 
 
 app.listen(3005, () => {
-    console.log('Server up and rdunning...');
+    console.log('Server up and running...');
 })
