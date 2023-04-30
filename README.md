@@ -2,7 +2,7 @@
 Clone the application and install all the required dependencies
 
 ```
-git clone 
+git clone https://github.com/swgilani/pmcc-fullstack.git
 cd pmcc-fullstack
 npm install  (to install server dependencies)
 cd client
