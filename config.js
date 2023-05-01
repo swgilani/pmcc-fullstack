@@ -6,8 +6,8 @@ const config = {
     orcestraPsetsUrl: "https://www.orcestra.ca/api/psets/canonical",
   },
   db: {
-    host: "",
-    port: "",
+    username: "",
+    password: "",
     dbClusterName: "",
   },
 };

@@ -7,7 +7,7 @@ const pSetsRoutes = require('./routes');
 const CONFIG = require('./config');
 
 
-mongoose.connect(`mongodb+srv://${CONFIG.db.host}:${CONFIG.db.port}@${CONFIG.db.dbClusterName}?retryWrites=true&w=majority`)
+mongoose.connect(`mongodb+srv://${CONFIG.db.username}:${CONFIG.db.password}@${CONFIG.db.dbClusterName}?retryWrites=true&w=majority`)
 .catch((exception => console.log(exception)));
 
 mongoose.connection.on("error", (exception => console.log(exception)));
