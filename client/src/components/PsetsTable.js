@@ -30,6 +30,7 @@ export default function PsetsTable({ psetsList }) {
       ),
     },
   ];
+  
   const paginationOptions = {
     custom: true,
     totalSize: psetsList.length,
